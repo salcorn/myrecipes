@@ -21,6 +21,8 @@
     </div><!-- end show_recipe -->
     
     <div class="well">
+      <p>Style: <%= render @recipe.styles %></p>
+      <p>Ingredients: <%= render @recipe.ingredients %></p>
       <p><strong>Steps:</strong></p>
       <%= simple_format(@recipe.description) %>
       <div class="pull-right">
